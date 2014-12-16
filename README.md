@@ -8,9 +8,7 @@
 
 # who?
 - Tatsuro Hisamori(久森 達郎)
-- FreakOut 2011/12 join
-- Ops/Dev
-- MySQL Casual :)
+- MTBurn Ops/Dev
 
 ---
 
@@ -111,17 +109,16 @@ ___
 
 ___
 
-## Fluentd
-- Log Collection
-- Send Notification Message to Slack
-- fluent-plugin-(norikra|mackerel|bigquery) is awesome
+## Docker
+
+![docker](images/docker.png)
 
 ___
 
-## Norikra
-- http://norikra.github.io/
-- Event Stream Processing with SQL.
-- Docker Image is available :) -> myfinder/docker-norikra
+## Fluentd
+- Log Collection
+- Send Notification Message to Slack
+- fluent-plugin-(norikra|mackerel|bigquery)
 
 ___
 
@@ -129,6 +126,28 @@ ___
 - Server Instance Management
 - Record Service Metric
 - Notify System Trouble
+
+___
+
+## Mackerel(AutoScaling)
+
+![autoscaling](images/autoscaling.png)
+
+___
+
+## Norikra
+- http://norikra.github.io/
+- Event Stream Processing with SQL.
+ - request status count
+ - count charge/payment per min
+- Docker Image is available :) -> myfinder/docker-norikra
+
+___
+
+## Norikra
+
+imp / click / conversion
+![norikra](images/norikra.png)
 
 ___
 
@@ -140,7 +159,7 @@ ___
 
 ---
 
-# Team Development
+# Development Tools
 
 ___
 
@@ -158,7 +177,7 @@ ___
 
 ___
 
-## qiita team
+## Qiita Team
 - Daily Report.
 - Record of meeting.
 - sharing tech infomations.
@@ -170,12 +189,36 @@ ___
 - notify member activities.
 - notify system trouble.
 
+___
+
+## Slack
+
+![mackerel_notify](images/mackerel-notify.png)
+
+___
+
+## Slack
+
+![oranie](images/oranie.png)
+
 ---
 
 # 小休止
-- 最近の会社らしく新し目の手法に寄せた :)
-- 一方、ここに至るまでに3回くらい構成を作りなおした :(
-- 次は作りなおす最中で使わなくなったものについて
+
+___
+
+## 事業状況
+
+![high](images/high-growth.png)
+
+___
+
+## 事業状況
+- サービスが急速に伸びてきている :)
+- 大きく3回くらい構成を作りなおした :(
+ - オンプレ -> クラウド
+ - セルフ -> マネージド
+- 成長の過程で使わなくなったものを紹介
 
 ---
 
@@ -187,6 +230,12 @@ ___
 - Server procurement
 - Flexibility of Server Deployment
 - Implementation speed
+
+___
+
+## Internal DNS Server
+- we were using the Unbound
+- switch to Route53 Internal DNS
 
 ___
 
@@ -202,21 +251,30 @@ ___
 
 ___
 
+## rsync -> s3 sync
+- deploy server -> s3 -> app server
+- without dependence on deployment server
+ - And safely in auto scaling
+
+___
+
 ## Puppet -> Ansible -> Shell
 - Decreased complexity of server setup
 - Don't need a lot of tools to the server setup
 
 ___
 
-## Internal DNS Server
-- we were using the Unbound
-- switch to Route53 Internal DNS
+## Nagios/CloudForecast
+- too many server list :(
+- difficult to integrity management
+- Mackerel is awesome :)
 
 ___
 
-## Nagios/CloudForecast
-- tired in the management of the server list.
-- Mackerel is awesome :)
+## HipChat
+- HipChat xxxx
+- frequently crash
+- API not cool
 
 ___
 
@@ -244,7 +302,3 @@ ___
 ---
 
 # Thanks
-
-___
-
-# Any Questions?
